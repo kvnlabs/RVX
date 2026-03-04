@@ -156,13 +156,13 @@ jobs:
     uses: ./.github/workflows/manual-patch.yml
     with:
       org: "RVE-anddea-stable"
-  Patch-RVE-anddea-beta:
-    name: Patch RVX Anddea Beta
-    needs: check
-    if: ${{ needs.check.outputs.check_rve_anddea_beta == 1 }}
-    uses: ./.github/workflows/manual-patch.yml
-    with:
-      org: "RVE-anddea-beta"
+  # Patch-RVE-anddea-beta:
+  #   name: Patch RVX Anddea Beta
+  #   needs: check
+  #   if: ${{ needs.check.outputs.check_rve_anddea_beta == 1 }}
+  #   uses: ./.github/workflows/manual-patch.yml
+  #   with:
+  #     org: "RVE-anddea-beta"
   Patch-Revanced-Extended:
     name: Patch Revanced Extended
     needs: check
@@ -170,20 +170,20 @@ jobs:
     uses: ./.github/workflows/manual-patch.yml
     with:
       org: "Revanced Extended"
-  Patch-Revanced-Extended-Beta:
-    name: Patch Revanced Extended Beta
-    needs: check
-    if: ${{ needs.check.outputs.check_rve_beta == 1 }}
-    uses: ./.github/workflows/manual-patch.yml
-    with:
-      org: "Revanced Extended Beta"
-  Patch-Revanced-Extended-Arsclib:
-    name: Patch Revanced Extended Arsclib
-    needs: check
-    if: ${{ needs.check.outputs.check_rve_arsclib == 1 }}
-    uses: ./.github/workflows/manual-patch.yml
-    with:
-      org: "Revanced Extended Arsclib"
+  # Patch-Revanced-Extended-Beta:
+  #   name: Patch Revanced Extended Beta
+  #   needs: check
+  #   if: ${{ needs.check.outputs.check_rve_beta == 1 }}
+  #   uses: ./.github/workflows/manual-patch.yml
+  #   with:
+  #     org: "Revanced Extended Beta"
+  # Patch-Revanced-Extended-Arsclib:
+  #   name: Patch Revanced Extended Arsclib
+  #   needs: check
+  #   if: ${{ needs.check.outputs.check_rve_arsclib == 1 }}
+  #   uses: ./.github/workflows/manual-patch.yml
+  #   with:
+  #     org: "Revanced Extended Arsclib"
   Patch-Twitter-Piko-Stable:
     name: Patch Twitter Piko Stable
     needs: check
@@ -191,34 +191,34 @@ jobs:
     uses: ./.github/workflows/manual-patch.yml
     with:
       org: "Twitter Piko Stable"
-  Patch-Twitter-Piko-Beta:
-    name: Patch Twitter Piko Beta
-    needs: check
-    if: ${{ needs.check.outputs.check_twitter_piko_beta == 1 }}
-    uses: ./.github/workflows/manual-patch.yml
-    with:
-      org: "Twitter Piko Beta"
-  Patch-Revanced-Extended-For-Android-6-7:
-    name: Patch RVX Android 6 & 7
-    needs: check
-    if: ${{ needs.check.outputs.check_rve67 == 1 }}
-    uses: ./.github/workflows/manual-patch.yml
-    with:
-      org: "Revanced Extended Android 6,7"
-  Patch-Revanced-Extended-For-Android-5:
-    name: Patch RVX Android 5
-    needs: check
-    if: ${{ needs.check.outputs.check_rve5 == 1 }}
-    uses: ./.github/workflows/manual-patch.yml
-    with:
-      org: "Revanced Extended Android 5"
-  Patch-BiliRoamingM:
-    name: Patch BiliRoamingM
-    needs: check
-    if: ${{ needs.check.outputs.check_BiliRoamingM == 1 }}
-    uses: ./.github/workflows/manual-patch.yml
-    with:
-      org: "BiliRoamingM"
+  # Patch-Twitter-Piko-Beta:
+  #   name: Patch Twitter Piko Beta
+  #   needs: check
+  #   if: ${{ needs.check.outputs.check_twitter_piko_beta == 1 }}
+  #   uses: ./.github/workflows/manual-patch.yml
+  #   with:
+  #     org: "Twitter Piko Beta"
+  # Patch-Revanced-Extended-For-Android-6-7:
+  #   name: Patch RVX Android 6 & 7
+  #   needs: check
+  #   if: ${{ needs.check.outputs.check_rve67 == 1 }}
+  #   uses: ./.github/workflows/manual-patch.yml
+  #   with:
+  #     org: "Revanced Extended Android 6,7"
+  # Patch-Revanced-Extended-For-Android-5:
+  #   name: Patch RVX Android 5
+  #   needs: check
+  #   if: ${{ needs.check.outputs.check_rve5 == 1 }}
+  #   uses: ./.github/workflows/manual-patch.yml
+  #   with:
+  #     org: "Revanced Extended Android 5"
+  # Patch-BiliRoamingM:
+  #   name: Patch BiliRoamingM
+  #   needs: check
+  #   if: ${{ needs.check.outputs.check_BiliRoamingM == 1 }}
+  #   uses: ./.github/workflows/manual-patch.yml
+  #   with:
+  #     org: "BiliRoamingM"
   Patch-Revanced-Experiments:
     name: Patch Revanced Experiments
     needs: check
