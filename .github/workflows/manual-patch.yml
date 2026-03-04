@@ -307,7 +307,7 @@ jobs:
   #       id: release-rve-arsclib
   #       if: steps.check-gh-rve-arsclib.outputs.internet_error == '0'
   #       uses: ./.github/actions/release
-  # patch_twitter_piko_stable:
+  patch_twitter_piko_stable:
     name: Patch Twitter Piko Stable
     if: ${{ github.event.inputs.org == 'Twitter Piko Stable' || inputs.org == 'Twitter Piko Stable' }}
     runs-on: ubuntu-latest
